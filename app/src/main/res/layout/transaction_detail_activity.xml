@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_custom_title"/>
+
+    <ImageView
+        android:id="@+id/transaction_icon"
+        android:layout_width="@dimen/service_transaction_img_height"
+        android:layout_height="@dimen/service_transaction_img_height"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:src="@drawable/me_avatar"/>
+
+    <TextView
+        android:id="@+id/transaction_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:text="@string/service_amount"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/login_input_text"/>
+
+    <TextView
+        android:id="@+id/transaction_amount_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/service_transaction_detail_margin"
+        android:text="500"
+        android:textColor="@color/app_dialog_result_text"
+        android:textSize="@dimen/app_dialog_result_text"/>
+
+    <include layout="@layout/transaction_detail_content"/>
+
+</LinearLayout>

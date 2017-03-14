@@ -1,0 +1,136 @@
+<resources>
+    <!-- 公用资源 -->
+    <string name="app_name">Jerry支付</string>
+    <string name="app_settings">设置</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="app_tab_main">首页</string>
+    <string name="app_tab_service">服务</string>
+    <string name="app_tab_discover">发现</string>
+    <string name="app_tab_me">我的</string>
+    <string name="app_title_log_out">退出</string>
+    <string name="app_button_submit">提交</string>
+    <string name="app_button_cancel">取消</string>
+    <string name="app_button_confirm">确认</string>
+    <string name="app_button_next">下一步</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+
+    <!-- 币种 -->
+    <string name="service_eur">欧元</string>
+    <string name="service_cny">人民币</string>
+
+    <!-- 首页资源 -->
+    <string name="home_account">账户</string>
+    <string name="home_transactions">交易记录查询</string>
+    <string name="home_personal">个人</string>
+
+    <!-- 服务资源 -->
+    <string name="service_scan">扫一扫</string>
+    <string name="service_qr_code">二维码</string>
+    <string name="service_recharge">充值</string>
+    <string name="service_withdraw">提现</string>
+    <string name="service_transfer">转账</string>
+    <string name="service_remark">备注</string>
+    <string name="service_all">全部</string>
+    <string name="service_outflow">转出</string>
+    <string name="service_inflow">转入</string>
+    <string name="service_transaction_detail">转账详情</string>
+    <string name="service_transaction_ref">交易单号:</string>
+    <string name="service_transaction_type">类型:</string>
+    <string name="service_transaction_currency">币种:</string>
+    <string name="service_transaction_channel">渠道:</string>
+    <string name="service_transaction_date">日期:</string>
+    <string name="service_transaction_balance">余额:</string>
+    <string name="service_transaction_remark">备注:</string>
+    <string name="service_scan_hint">将二维码放入框内，即可自动扫描</string>
+    <string name="service_amount">金额:</string>
+    <string name="request_camera_hint">我们需要您赋予相机权限，才能开启扫一扫功能</string>
+    <string name="open_camera_hint">请在设置中手动开启相机权限，才能开启扫一扫功能</string>
+    <string name="select_data">选择日期</string>
+
+    <!-- 发现资源 -->
+    <string name="discover_recent_contacts">最近交易联系人</string>
+    <string name="discover_help">帮助</string>
+    <string name="discover_feedback">意见反馈</string>
+    <string name="discover_about_us">关于我们</string>
+    <string name="discover_input_hint">请输入反馈内容</string>
+
+    <!-- 我的资源 -->
+    <string name="me_personal_info">个人信息</string>
+    <string name="me_setting">我的设置</string>
+    <string name="me_balance">余额</string>
+    <string name="me_bank_card">银行卡</string>
+    <string name="me_name_authentication">实名认证</string>
+    <string name="login_email">邮箱</string>
+    <string name="login_psw">密码</string>
+    <string name="login_forget_psw">忘记密码</string>
+    <string name="login_register">注册</string>
+    <string name="login_sign_in">登录</string>
+    <string name="login_error_email_null">邮箱地址不能为空</string>
+    <string name="login_error_psw_null">密码不能为空</string>
+    <string name="register_error_phone_null">手机号不能为空</string>
+    <string name="me_error_address_null">地址不能为空</string>
+    <string name="login_error_invalid_email">邮箱地址无效</string>
+    <string name="login_error_invalid_psw">密码无效</string>
+    <string name="register_error_invalid_code">验证码不能为空</string>
+    <string name="register_error_invalid_phone">手机号无效</string>
+    <string name="me_error_invalid_nickname">请输入正确的昵称</string>
+    <string name="me_error_nickname_null">昵称不能为空</string>
+    <string name="me_error_invalid_address">请输入正确的地址</string>
+
+    <string name="sign_up_country">国家</string>
+    <string name="sign_up_email">邮件</string>
+    <string name="sign_up_v_code">验证码</string>
+    <string name="sign_up_send_code">发送验证码到邮箱</string>
+    <string name="sign_up_psw">密码</string>
+    <string name="sign_up_phone">手机号</string>
+    <string name="sign_up_policy">政策条款</string>
+    <string name="sign_up_agree">同意并注册</string>
+
+    <string name="me_personal_avatar">头像</string>
+    <string name="me_personal_nick_name">昵称</string>
+    <string name="me_personal_email">邮箱</string>
+    <string name="me_personal_address">地址</string>
+    <string name="me_personal_phone">手机号</string>
+    <string name="me_personal_verification">实名认证</string>
+    <string name="me_modify_avatar">修改头像</string>
+    <string name="me_modify_nick_name">修改昵称</string>
+    <string name="me_modify_email">修改邮箱</string>
+    <string name="me_modify_address">修改地址</string>
+    <string name="me_modify_phone">修改手机号</string>
+    <string name="me_modify_avatar_choose">选择相册照片</string>
+    <string name="me_modify_avatar_new">拍照</string>
+    <string name="me_modify_avatar_album">相册</string>
+    <string name="me_modify_discard">舍弃</string>
+    <string name="me_modify_save">保存</string>
+    <string name="me_modify_wait">请稍后</string>
+    <string name="me_qr_code">我的二维码</string>
+    <string name="me_top_up_currency">币种</string>
+    <string name="me_top_up_amount">金额</string>
+    <string name="me_top_up_limit">限额</string>
+    <string name="me_withdraw_time">2小时到账</string>
+    <string name="me_withdraw_instuction">说明</string>
+    <string name="me_bank_card_name">持卡人姓名</string>
+    <string name="me_bank_card_num">银行卡号</string>
+    <string name="me_add_bank_card">添加银行卡</string>
+    <string name="me_add_bank_expire">有效期</string>
+    <string name="me_add_bank_address">地址1</string>
+    <string name="me_add_bank_add">地址2</string>
+    <string name="me_new_psw">新密码</string>
+    <string name="me_re_new_psw">再次输入新密码</string>
+    <string name="me_reset_psw">重设密码</string>
+    <string name="me_unverify_policy">实名认证条款</string>
+    <string name="me_link_card">关联银行卡</string>
+    <string name="me_verify_no">未认证</string>
+    <string name="me_verify_status">实名认证状态:</string>
+    <string name="me_verify_verified">已认证</string>
+    <string name="me_account_name">账户名</string>
+    <string name="me_email">邮箱:</string>
+    <string name="me_region">地区:</string>
+    <string name="me_modify_language">设置语言</string>
+
+    <string name="get_local_img_reson">我们需要您赋予读写手机存储权限，才能开启选择照片功能</string>
+    <string name="get_local_img_hint">请在设置中手动开启读写手机存储权限，才能开启选择照片功能</string>
+    <string name="camera_storage_hint">请在设置中手动开启读写手机存储权限，才能开启拍照功能</string>
+    <string name="camera_permission_hint">请在设置中手动开启相机权限，才能开启拍照功能</string>
+    <string name="camera_all_hint">请在设置中手动开启读写手机存储和相机权限，才能开启拍照功能</string>
+</resources>

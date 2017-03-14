@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/verified_title"
+        layout="@layout/app_custom_title" />
+
+    <com.jerry.payment.mobile.payment.widget.CircleImageView
+        android:id="@+id/verified_avatar"
+        android:layout_width="@dimen/me_verify_avatar_height"
+        android:layout_height="@dimen/me_verify_avatar_height"
+        android:layout_below="@id/verified_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/me_login_input_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/me_avatar" />
+
+    <ImageView
+        android:id="@+id/verified_status_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verified_avatar"
+        android:layout_marginEnd="@dimen/me_qr_code_drawable_padding"
+        android:layout_marginStart="@dimen/me_verify_text_margin"
+        android:layout_marginTop="@dimen/me_verify_text_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/me_verify_status" />
+
+    <TextView
+        android:id="@+id/verified_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/verified_status_icon"
+        android:layout_toEndOf="@id/verified_status_icon"
+        android:gravity="start"
+        android:lines="2"
+        android:text="@string/me_verify_status"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <View
+        android:id="@+id/verified_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_divider_height"
+        android:layout_below="@id/verified_status"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:layout_marginTop="@dimen/list_item_text_margin"
+        android:background="@color/list_item_divider" />
+
+    <ImageView
+        android:id="@+id/verified_account_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verified_divider1"
+        android:layout_marginEnd="@dimen/me_qr_code_drawable_padding"
+        android:layout_marginStart="@dimen/me_verify_text_margin"
+        android:layout_marginTop="@dimen/list_item_text_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/me_qr_code_name" />
+
+    <TextView
+        android:id="@+id/verified_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/verified_account_icon"
+        android:layout_toEndOf="@id/verified_account_icon"
+        android:gravity="start"
+        android:lines="2"
+        android:text="@string/me_account_name"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <View
+        android:id="@+id/verified_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_divider_height"
+        android:layout_below="@id/verified_account"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:layout_marginTop="@dimen/list_item_text_margin"
+        android:background="@color/list_item_divider" />
+
+    <ImageView
+        android:id="@+id/verified_region_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verified_divider2"
+        android:layout_marginEnd="@dimen/me_qr_code_drawable_padding"
+        android:layout_marginStart="@dimen/me_verify_text_margin"
+        android:layout_marginTop="@dimen/list_item_text_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/me_qr_code_name" />
+
+    <TextView
+        android:id="@+id/verified_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/verified_region_icon"
+        android:layout_toEndOf="@id/verified_region_icon"
+        android:gravity="start"
+        android:lines="2"
+        android:text="@string/sign_up_country"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <View
+        android:id="@+id/verified_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_divider_height"
+        android:layout_below="@id/verified_region"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:layout_marginTop="@dimen/list_item_text_margin"
+        android:background="@color/list_item_divider" />
+
+    <ImageView
+        android:id="@+id/verified_email_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verified_divider3"
+        android:layout_marginEnd="@dimen/me_qr_code_drawable_padding"
+        android:layout_marginStart="@dimen/me_verify_text_margin"
+        android:layout_marginTop="@dimen/list_item_text_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/me_qr_code_name" />
+
+    <TextView
+        android:id="@+id/verified_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/verified_email_icon"
+        android:layout_toEndOf="@id/verified_email_icon"
+        android:gravity="start"
+        android:lines="2"
+        android:text="@string/me_email"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/add_card_title"
+        layout="@layout/app_custom_title" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/add_card_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_card_title"
+        android:layout_marginTop="@dimen/me_login_input_margin">
+
+        <EditText
+            android:id="@+id/add_card_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_login_input_height"
+            android:layout_marginEnd="@dimen/me_login_input_margin"
+            android:layout_marginStart="@dimen/me_login_input_margin"
+            android:layout_marginTop="@dimen/me_login_input_margin"
+            android:drawablePadding="@dimen/me_login_input_margin"
+            android:drawableStart="@drawable/me_modify_nickname"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:hint="@string/me_bank_card_name"
+            android:textSize="@dimen/login_logo_text"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/add_card_num_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_card_name_layout"
+        android:layout_marginTop="@dimen/me_login_input_margin">
+
+        <EditText
+            android:id="@+id/add_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_login_input_height"
+            android:layout_marginEnd="@dimen/me_login_input_margin"
+            android:layout_marginStart="@dimen/me_login_input_margin"
+            android:layout_marginTop="@dimen/me_login_input_margin"
+            android:drawablePadding="@dimen/me_login_input_margin"
+            android:drawableStart="@drawable/me_bank_card_num"
+            android:imeActionId="@+id/add_first_next"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="@string/me_bank_card_num"
+            android:textSize="@dimen/login_logo_text"
+            android:inputType="number"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/add_card_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/app_button_margin_bottom"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:background="@drawable/app_submit_button_bg"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_button_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用颜色-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#a1a1a1</color>
+    <color name="deep_red">#c70000</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimary">#737371</color>
+    <color name="colorPrimaryDark">#172434</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTabIndicator">#6f111822</color>
+    <color name="color_tab_text_selected">#e6e8ec</color>
+    <color name="list_item_divider">#6fc3c9c9</color>
+    <color name="list_item_text_color">#494947</color>
+    <color name="app_title_back_clicked">#6b6b68</color>
+    <color name="app_title_background">#494947</color>
+    <color name="app_submit_btn">#ff7e00</color>
+    <color name="app_submit_btn_clicked">#ffa752</color>
+    <color name="app_cancel_btn">#dbe1e1</color>
+    <color name="app_cancel_btn_clicked">#f0f4f4</color>
+    <color name="app_cancel_btn_text">#a4a09b</color>
+    <color name="app_crop_img_text">#007ADF</color>
+    <color name="app_bg_white">#fbfbfb</color>
+    <color name="app_dialog_result_text">#ff7e00</color>
+    <color name="app_dialog_positive_text">#ff7e09</color>
+    <color name="app_dialog_positive_bg">#f6f5f4</color>
+
+    <!--主页面颜色-->
+    <color name="app_fragment_bg">#9292ff</color>
+
+    <!--我的页面颜色-->
+    <color name="avatar_name_color">#A4A09B</color>
+    <color name="login_link">#00c1dd</color>
+    <color name="me_qr_code_bg">#efeeec</color>
+    <color name="balance_item_bule_bg">#00b1eb</color>
+    <color name="balance_item_red_bg">#ff7042</color>
+    <color name="balance_bar_bg">#96262423</color>
+
+    <!-- 二维码扫描颜色 -->
+    <color name="viewfinder_frame">#ff7BCAFC</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="scan_hint_text">#e6e8ec</color>
+
+    <!-- 日历颜色 -->
+    <color name="normal_day">#ff999999</color>
+    <color name="selected_day_background">#E75F49</color>
+    <color name="selected_day_text">#fff2f2f2</color>
+</resources>

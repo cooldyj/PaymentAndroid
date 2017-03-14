@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_custom_title" />
+
+    <com.jerry.payment.mobile.payment.widget.calendar.DayPickerView
+        android:id="@+id/calendar_picker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:calendarHeight="270dip"
+        app:colorCurrentDay="@color/black"
+        app:colorDayName="#ff999999"
+        app:colorMonthName="#ff999999"
+        app:colorNormalDay="#ff999999"
+        app:colorPreviousDay="@color/balance_item_bule_bg"
+        app:colorSelectedDayBackground="#E75F49"
+        app:colorSelectedDayText="#fff2f2f2"
+        app:currentDaySelected="false"
+        app:drawRoundRect="false"
+        app:enablePreviousDay="true"
+        app:headerMonthHeight="50dip"
+        app:selectedDayRadius="16dip"
+        app:textSizeDay="16sp"
+        app:textSizeDayName="10sp"
+        app:textSizeMonth="16sp" />
+
+</LinearLayout>

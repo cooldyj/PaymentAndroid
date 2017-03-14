@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/modify_title"
+        layout="@layout/app_custom_title" />
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/modify_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modify_title"
+        android:layout_marginTop="@dimen/me_login_input_margin">-->
+
+    <EditText
+        android:id="@+id/modify_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_below="@id/modify_title"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:layout_marginTop="@dimen/me_login_input_margin"
+        android:drawablePadding="@dimen/me_login_input_margin"
+        android:imeActionId="@+id/submit"
+        android:imeOptions="actionDone"
+        android:maxLines="3"
+        android:textSize="@dimen/login_logo_text" />
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <TextView
+        android:id="@+id/modify_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/app_button_margin_bottom"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:background="@drawable/app_submit_button_bg"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_button_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text" />
+
+</RelativeLayout>

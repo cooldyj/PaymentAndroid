@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/transfer_title"
+        layout="@layout/app_custom_title" />
+
+
+    <EditText
+        android:id="@+id/transfer_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_below="@id/transfer_title"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:layout_marginTop="@dimen/me_login_input_margin"
+        android:drawableLeft="@drawable/service_transfer_account"
+        android:drawablePadding="@dimen/me_login_input_margin"
+        android:hint="@string/home_account"
+        android:imeActionId="@+id/transfer_next"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="@dimen/login_logo_text" />
+
+
+    <TextView
+        android:id="@+id/transfer_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/app_button_margin_bottom"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:background="@drawable/app_submit_button_bg"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_button_next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text" />
+
+</RelativeLayout>

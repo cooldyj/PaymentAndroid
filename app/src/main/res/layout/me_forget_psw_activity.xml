@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/forget_title_layout"
+        layout="@layout/app_custom_title" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/forget_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forget_title_layout"
+        android:layout_marginTop="@dimen/me_login_input_margin">
+
+        <EditText
+            android:id="@+id/forget_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_login_input_height"
+            android:layout_marginEnd="@dimen/me_login_input_margin"
+            android:layout_marginStart="@dimen/me_login_input_margin"
+            android:drawablePadding="@dimen/me_login_input_margin"
+            android:drawableStart="@drawable/login_email"
+            android:hint="@string/sign_up_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="@dimen/login_logo_text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forget_email_layout"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/forget_code_layout"
+            android:layout_width="@dimen/me_sign_up_v_code_width"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/forget_v_code"
+                android:layout_width="@dimen/me_sign_up_v_code_width"
+                android:layout_height="@dimen/me_login_input_height"
+                android:layout_alignParentStart="true"
+                android:drawablePadding="@dimen/me_login_input_margin"
+                android:drawableStart="@drawable/me_sign_up_v_code"
+                android:hint="@string/sign_up_v_code"
+                android:inputType="text"
+                android:imeActionId="@+id/submit"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/login_logo_text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forget_send_code"
+            android:layout_width="@dimen/me_sign_up_v_text_width"
+            android:layout_height="@dimen/me_login_input_height"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:gravity="start|center"
+            android:text="@string/sign_up_send_code"
+            android:textColor="@color/login_link"
+            android:textSize="@dimen/sign_up_send_code" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forget_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/app_button_margin_bottom"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:background="@drawable/app_cancel_button_bg"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_button_cancel"
+        android:textColor="@color/app_cancel_btn_text"
+        android:textSize="@dimen/login_button_text" />
+
+    <TextView
+        android:id="@+id/forget_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_above="@id/forget_cancel"
+        android:layout_marginBottom="@dimen/me_login_input_margin"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:background="@drawable/app_submit_button_bg"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/app_button_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text" />
+
+</RelativeLayout>

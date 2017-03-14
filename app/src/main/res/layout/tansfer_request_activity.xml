@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_custom_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/app_user_info_layout" />
+
+            <EditText
+                android:id="@+id/request_currency"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/me_bank_card_list_height"
+                android:layout_marginEnd="@dimen/me_login_input_margin"
+                android:layout_marginStart="@dimen/me_top_up_margin"
+                android:background="@color/app_bg_white"
+                android:drawableEnd="@drawable/app_list_item_arrow"
+                android:drawablePadding="@dimen/me_login_input_margin"
+                android:drawableStart="@drawable/me_topup_currency"
+                android:hint="@string/me_top_up_currency"
+                android:imeActionId="@+id/submit"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/login_logo_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_divider_height"
+                android:layout_marginEnd="@dimen/me_bank_card_icon_margin"
+                android:layout_marginStart="@dimen/me_bank_card_icon_margin"
+                android:background="@color/list_item_divider" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/request_amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/me_bank_card_list_height">
+
+                <EditText
+                    android:id="@+id/request_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/me_login_input_margin"
+                    android:layout_marginStart="@dimen/me_top_up_margin"
+                    android:background="@color/app_bg_white"
+                    android:drawablePadding="@dimen/me_login_input_margin"
+                    android:drawableStart="@drawable/me_topup_amount"
+                    android:hint="@string/me_top_up_amount"
+                    android:imeActionId="@+id/submit"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/login_logo_text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_divider_height"
+                android:layout_marginEnd="@dimen/me_bank_card_icon_margin"
+                android:layout_marginStart="@dimen/me_bank_card_icon_margin"
+                android:background="@color/list_item_divider" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/request_remark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/me_bank_card_list_height">
+
+                <EditText
+                    android:id="@+id/request_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/me_login_input_margin"
+                    android:layout_marginStart="@dimen/me_top_up_margin"
+                    android:background="@color/app_bg_white"
+                    android:drawablePadding="@dimen/me_login_input_margin"
+                    android:drawableStart="@drawable/service_remark"
+                    android:hint="@string/service_remark"
+                    android:imeActionId="@+id/submit"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/login_logo_text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/list_item_divider_height"
+                android:layout_marginEnd="@dimen/me_bank_card_icon_margin"
+                android:layout_marginStart="@dimen/me_bank_card_icon_margin"
+                android:background="@color/list_item_divider" />
+
+            <TextView
+                android:id="@+id/request_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/me_login_input_height"
+                android:layout_marginEnd="@dimen/me_login_input_margin"
+                android:layout_marginStart="@dimen/me_login_input_margin"
+                android:layout_marginTop="@dimen/app_button_margin_bottom"
+                android:background="@drawable/app_submit_button_bg"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_button_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_button_text" />
+
+            <TextView
+                android:id="@+id/request_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/me_login_input_height"
+                android:layout_marginEnd="@dimen/me_login_input_margin"
+                android:layout_marginStart="@dimen/me_login_input_margin"
+                android:layout_marginTop="@dimen/me_login_input_margin"
+                android:background="@drawable/app_cancel_button_bg"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_button_cancel"
+                android:textColor="@color/app_cancel_btn_text"
+                android:textSize="@dimen/login_button_text" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

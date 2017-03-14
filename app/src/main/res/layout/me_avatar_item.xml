@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="@dimen/home_text_margin"
+    android:orientation="vertical">
+
+    <com.jerry.payment.mobile.widget.CircleImageView
+        android:id="@+id/me_avatar_img"
+        android:layout_width="@dimen/me_avatar_height"
+        android:layout_height="@dimen/me_avatar_height"
+        android:src="@drawable/me_avatar" />
+
+    <TextView
+        android:id="@+id/me_avatar_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/me_avatar_text_margin"
+        android:text="Jerry"
+        android:textColor="@color/avatar_name_color"
+        android:textSize="@dimen/me_avatar_name" />
+
+    <TextView
+        android:id="@+id/me_avatar_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/me_avatar_text_margin"
+        android:text="cooldyj@126.com"
+        android:textColor="@color/avatar_name_color"
+        android:textSize="@dimen/me_avatar_email" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_divider_height"
+        android:layout_marginTop="@dimen/home_text_margin"
+        android:background="@color/list_item_divider" />
+</LinearLayout>

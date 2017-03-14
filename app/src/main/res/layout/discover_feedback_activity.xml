@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_custom_title" />
+
+    <EditText
+        android:id="@+id/feed_back_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/discover_feedback_input_height"
+        android:layout_margin="@dimen/discover_feedback_input_margin"
+        android:background="@drawable/login_input"
+        android:gravity="top"
+        android:padding="@dimen/discover_feedback_input_padding"
+        android:hint="@string/discover_input_hint"
+        android:textSize="@dimen/login_logo_text"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/feed_back_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/discover_feedback_input_margin"
+        android:layout_marginStart="@dimen/discover_feedback_input_margin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_title_logout_text_size" />
+
+    <TextView
+        android:id="@+id/feed_back_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/discover_feedback_button_height"
+        android:layout_margin="@dimen/discover_feedback_input_margin"
+        android:background="@drawable/app_submit_button_bg"
+        android:gravity="center"
+        android:text="@string/app_button_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text" />
+
+</LinearLayout>

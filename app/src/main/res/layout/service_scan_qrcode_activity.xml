@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SurfaceView
+        android:id="@+id/scan_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jerry.payment.mobile.module.service.zxing.view.ViewfinderView
+            android:id="@+id/scan_viewfinder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/service_scan_text_margin"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/service_scan_hint"
+            android:textColor="@color/scan_hint_text"
+            android:textSize="@dimen/me_avatar_email" />
+
+        <ImageView
+            android:id="@+id/scan_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/service_scan_5"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/app_custom_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_alignParentTop="true" />
+    <!--
+    </RelativeLayout>-->
+</merge>

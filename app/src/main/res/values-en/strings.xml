@@ -1,0 +1,136 @@
+<resources>
+    <!-- public resource -->
+    <string name="app_name">Jerry Payment</string>
+    <string name="app_settings">settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="app_tab_main">Home</string>
+    <string name="app_tab_service">Service</string>
+    <string name="app_tab_discover">Discover</string>
+    <string name="app_tab_me">Me</string>
+    <string name="app_title_log_out">Log out</string>
+    <string name="app_button_submit">Submit</string>
+    <string name="app_button_cancel">Cancel</string>
+    <string name="app_button_confirm">Confirm</string>
+    <string name="app_button_next">Next</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+
+    <!-- 币种 -->
+    <string name="service_eur">EUR</string>
+    <string name="service_cny">CNY</string>
+
+    <!-- home resource -->
+    <string name="home_account">account</string>
+    <string name="home_transactions">Transactions</string>
+    <string name="home_personal">personal</string>
+
+    <!-- service resource -->
+    <string name="service_scan">Scan QR Code</string>
+    <string name="service_qr_code">My QR Code</string>
+    <string name="service_recharge">Recharge</string>
+    <string name="service_withdraw">Withdraw</string>
+    <string name="service_transfer">Transfer</string>
+    <string name="service_remark">Remark</string>
+    <string name="service_all">All</string>
+    <string name="service_outflow">Outflow</string>
+    <string name="service_inflow">Inflow</string>
+    <string name="service_transaction_detail">Transaction Detail</string>
+    <string name="service_transaction_ref">Ref No:</string>
+    <string name="service_transaction_type">Type:</string>
+    <string name="service_transaction_currency">Currency:</string>
+    <string name="service_transaction_channel">Channel:</string>
+    <string name="service_transaction_date">Date:</string>
+    <string name="service_transaction_balance">Balance:</string>
+    <string name="service_transaction_remark">Remark:</string>
+    <string name="service_scan_hint">Put the QRCode into the Box, \n then it can be automatically identified</string>
+    <string name="service_amount">Amount:</string>
+    <string name="request_camera_hint">We need the camera permission to open the scan function</string>
+    <string name="open_camera_hint">Please manual opening camera permission，so that can we open the scan function</string>
+    <string name="select_data">Select Date</string>
+
+    <!-- discover resource -->
+    <string name="discover_recent_contacts">Recent Transaction Contacts</string>
+    <string name="discover_help">Support</string>
+    <string name="discover_feedback">Feedback</string>
+    <string name="discover_about_us">About Us</string>
+    <string name="discover_input_hint">please input feedback</string>
+
+    <!-- me resource -->
+    <string name="me_personal_info">Profile</string>
+    <string name="me_setting">My Setting</string>
+    <string name="me_balance">Balance</string>
+    <string name="me_bank_card">Bank Card</string>
+    <string name="me_name_authentication">Real Name Authentication</string>
+    <string name="login_email">Email</string>
+    <string name="login_psw">Password</string>
+    <string name="login_forget_psw">Forget password</string>
+    <string name="login_register">Sign up</string>
+    <string name="login_sign_in">Sign In</string>
+    <string name="login_error_email_null">Email address can not be null</string>
+    <string name="login_error_psw_null">Password can not be null</string>
+    <string name="register_error_phone_null">Phone number can not be null</string>
+    <string name="me_error_address_null">Address can not be null</string>
+    <string name="login_error_invalid_email">This email address is invalid</string>
+    <string name="login_error_invalid_psw">This password is too short</string>
+    <string name="register_error_invalid_code">verification code can not be null</string>
+    <string name="register_error_invalid_phone">This phone number is invalid</string>
+    <string name="me_error_invalid_nickname">Please input correct nick name</string>
+    <string name="me_error_nickname_null">Nick name can not be null</string>
+    <string name="me_error_invalid_address">please input correct address</string>
+
+    <string name="sign_up_country">Country</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_v_code">Verification Code</string>
+    <string name="sign_up_send_code">Send verification code to my email</string>
+    <string name="sign_up_psw">Password</string>
+    <string name="sign_up_phone">Mobile Phone</string>
+    <string name="sign_up_policy">E-Communication Delivery Policy</string>
+    <string name="sign_up_agree">Agree &#038; Create Account</string>
+
+    <string name="me_personal_avatar">Avatar</string>
+    <string name="me_personal_nick_name">Nick Name</string>
+    <string name="me_personal_email">Email</string>
+    <string name="me_personal_address">Address</string>
+    <string name="me_personal_phone">Phone Number</string>
+    <string name="me_personal_verification">Verification</string>
+    <string name="me_modify_avatar">Set Photo</string>
+    <string name="me_modify_nick_name">Set Nick Name</string>
+    <string name="me_modify_email">Set Email</string>
+    <string name="me_modify_address">Set Address</string>
+    <string name="me_modify_phone">Set Phone Number</string>
+    <string name="me_modify_avatar_choose">Choose from Album</string>
+    <string name="me_modify_avatar_new">Take Photo</string>
+    <string name="me_modify_avatar_album">Album</string>
+    <string name="me_modify_discard">Discard</string>
+    <string name="me_modify_save">Save</string>
+    <string name="me_modify_wait">One Moment Please</string>
+    <string name="me_qr_code">My QR code</string>
+    <string name="me_top_up_currency">Currency</string>
+    <string name="me_top_up_amount">Amount</string>
+    <string name="me_top_up_limit">Limit</string>
+    <string name="me_withdraw_time">Pay within 2hrs</string>
+    <string name="me_withdraw_instuction">Instruction</string>
+    <string name="me_bank_card_name">Holder Name</string>
+    <string name="me_bank_card_num">Card Number</string>
+    <string name="me_add_bank_card">Add Bank Card</string>
+    <string name="me_add_bank_expire">Expire Date</string>
+    <string name="me_add_bank_address">Address1</string>
+    <string name="me_add_bank_add">Address2</string>
+    <string name="me_new_psw">New Password</string>
+    <string name="me_re_new_psw">Re-enter New Password</string>
+    <string name="me_reset_psw">Reset Password</string>
+    <string name="me_unverify_policy">Account Verification Policy</string>
+    <string name="me_link_card">Link Card</string>
+    <string name="me_verify_status">Verification Status:</string>
+    <string name="me_verify_no">Unverified</string>
+    <string name="me_verify_verified">Verified</string>
+    <string name="me_account_name">Account Name</string>
+    <string name="me_email">Email:</string>
+    <string name="me_region">Region</string>
+    <string name="me_modify_language">Set Language</string>
+
+    <string name="get_local_img_reson">We need the storage permission to open the choosing image function</string>
+    <string name="get_local_img_hint">Please manual opening storage permission，so that can we open the choosing image function</string>
+    <string name="camera_storage_hint">Please manual opening storage permission，so that can we open the taking photo function</string>
+    <string name="camera_permission_hint">Please manual opening camera permission，so that can we open the taking photo function</string>
+    <string name="camera_all_hint">Please manual opening storage and camera permission，so that can we open the taking photo function</string>
+</resources>

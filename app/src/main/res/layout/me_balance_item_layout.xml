@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/balance_item_bule_bg">
+
+    <TextView
+        android:id="@+id/balance_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_transaction_balance"
+        android:layout_marginTop="@dimen/me_balance_item_margin"
+        android:layout_marginStart="@dimen/me_balance_item_margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/me_balance_item_text"/>
+
+    <TextView
+        android:id="@+id/balance_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/me_balance_item_margin"
+        android:layout_centerVertical="true"
+        android:text="26000.00"
+        android:textSize="@dimen/me_balance_amount_text"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/balance_currency"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_balance_bar_height"
+        android:background="@color/balance_bar_bg"
+        android:text="Currency:EUR"
+        android:textColor="@color/white"
+        android:textSize="@dimen/me_balance_item_text"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="@dimen/me_balance_item_margin"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

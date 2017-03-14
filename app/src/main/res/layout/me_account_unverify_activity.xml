@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/unverify_title"
+        layout="@layout/app_custom_title" />
+
+    <com.jerry.payment.mobile.payment.widget.CircleImageView
+        android:id="@+id/unverify_avatar"
+        android:layout_width="@dimen/me_verify_avatar_height"
+        android:layout_height="@dimen/me_verify_avatar_height"
+        android:layout_below="@id/unverify_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/me_login_input_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/me_avatar" />
+
+    <TextView
+        android:id="@+id/unverify_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unverify_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/me_login_input_margin"
+        android:drawablePadding="@dimen/me_qr_code_drawable_padding"
+        android:drawableStart="@drawable/me_verify_status"
+        android:gravity="start|center_vertical"
+        android:text="Verification Stauts: Un-verify"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/unverify_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/me_login_input_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:text="@string/me_unverify_policy"
+        android:textColor="@color/login_link"
+        android:textSize="@dimen/login_link_text" />
+
+    <TextView
+        android:id="@+id/unverify_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_login_input_height"
+        android:layout_above="@id/unverify_policy"
+        android:layout_marginBottom="@dimen/me_login_input_margin"
+        android:layout_marginEnd="@dimen/me_login_input_margin"
+        android:layout_marginStart="@dimen/me_login_input_margin"
+        android:background="@drawable/app_submit_button_bg"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/me_link_card"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_button_text" />
+
+</RelativeLayout>

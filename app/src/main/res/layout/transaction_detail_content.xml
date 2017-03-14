@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/service_transaction_content_padding"
+    android:paddingStart="@dimen/service_transaction_content_padding"
+    android:paddingTop="@dimen/service_transaction_img_margin">
+
+    <TextView
+        android:id="@+id/transaction_ref"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="start"
+        android:text="@string/service_transaction_ref"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_ref_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/transaction_ref"
+        android:text="201607828265367"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_type"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/transaction_ref"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:gravity="start"
+        android:text="@string/service_transaction_type"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/transaction_type"
+        android:layout_toEndOf="@id/transaction_type"
+        android:text="OutFlow"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_currency"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/transaction_type"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:gravity="start"
+        android:text="@string/service_transaction_currency"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_currency_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/transaction_currency"
+        android:layout_toEndOf="@id/transaction_currency"
+        android:text="EUR"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_channel"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/transaction_currency"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:gravity="start"
+        android:text="@string/service_transaction_currency"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_channel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/transaction_channel"
+        android:layout_toEndOf="@id/transaction_channel"
+        android:text="IBS Account"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_date"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/transaction_channel"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:gravity="start"
+        android:text="@string/service_transaction_date"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/transaction_date"
+        android:layout_toEndOf="@id/transaction_date"
+        android:text="2016/07/26 11:17"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_balance"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/transaction_date"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:gravity="start"
+        android:text="@string/service_transaction_balance"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_balance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/transaction_balance"
+        android:layout_toEndOf="@id/transaction_balance"
+        android:text="1000"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_remark"
+        android:layout_width="@dimen/service_transaction_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/transaction_balance"
+        android:layout_marginTop="@dimen/service_transaction_img_margin"
+        android:gravity="start"
+        android:text="@string/service_transaction_remark"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/list_item_text_size" />
+
+    <TextView
+        android:id="@+id/transaction_remark_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/transaction_remark"
+        android:layout_toEndOf="@id/transaction_remark"
+        android:text="Withdraw"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/list_item_text_size" />
+
+</RelativeLayout>

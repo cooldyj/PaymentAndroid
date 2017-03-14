@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context="com.jerry.payment.mobile.payment.module.service.TransactionActivity">
+
+    <include
+        android:id="@+id/transaction_title"
+        layout="@layout/app_custom_title" />
+
+    <ImageView
+        android:id="@+id/transaction_calendar"
+        android:layout_width="@dimen/app_title_height"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/transaction_title"
+        android:scaleType="centerInside"
+        android:src="@drawable/service_calendar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/transaction_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:layout_below="@id/transaction_title"
+        android:layout_marginEnd="@dimen/service_transfer_tab_margin"
+        android:layout_toStartOf="@id/transaction_calendar"
+        app:tabTextAppearance="@style/Transaction.TextAppearance"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/transaction_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/transaction_tabs" />
+</RelativeLayout>

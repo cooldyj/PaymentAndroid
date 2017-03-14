@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/me_qr_code_info_height">
+
+    <com.jerry.payment.mobile.payment.widget.CircleImageView
+        android:id="@+id/me_qr_avatar"
+        android:layout_width="@dimen/me_avatar_height"
+        android:layout_height="@dimen/me_avatar_height"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/me_qr_code_info_margin"
+        android:src="@drawable/me_avatar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/list_item_icon_margin"
+        android:layout_toEndOf="@id/me_qr_avatar"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/me_qr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/me_qr_code_drawable_padding"
+            android:drawableStart="@drawable/me_qr_code_name"
+            android:gravity="center_vertical"
+            android:text="Mark jazz"
+            android:textColor="@color/list_item_text_color"
+            android:textSize="@dimen/me_bank_card_name" />
+
+        <TextView
+            android:id="@+id/me_qr_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/me_qr_code_text_margin"
+            android:drawablePadding="@dimen/me_qr_code_drawable_padding"
+            android:drawableStart="@drawable/me_qr_code_country"
+            android:gravity="center_vertical"
+            android:text="America"
+            android:textColor="@color/list_item_text_color"
+            android:textSize="@dimen/me_bank_card_name" />
+
+        <TextView
+            android:id="@+id/me_qr_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/me_qr_code_text_margin"
+            android:drawablePadding="@dimen/me_qr_code_drawable_padding"
+            android:drawableStart="@drawable/me_qr_code_email"
+            android:gravity="center_vertical"
+            android:text="cooldyj@126.com"
+            android:textColor="@color/list_item_text_color"
+            android:textSize="@dimen/me_bank_card_name" />
+
+    </LinearLayout>
+
+</RelativeLayout>

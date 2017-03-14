@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/bank_card_title"
+        layout="@layout/app_custom_title" />
+
+    <TextView
+        android:id="@+id/bank_card_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/discover_feedback_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/me_bank_card_add_margin"
+        android:layout_marginEnd="@dimen/discover_feedback_input_margin"
+        android:layout_marginStart="@dimen/discover_feedback_input_margin"
+        android:background="@drawable/login_input"
+        android:gravity="center"
+        android:text="+Add Card"
+        android:textColor="@color/list_item_text_color"
+        android:textSize="@dimen/login_button_text" />
+
+    <ListView
+        android:id="@+id/bank_card_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bank_card_title"
+        android:layout_above="@id/bank_card_add"/>
+
+</RelativeLayout>
